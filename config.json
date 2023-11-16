@@ -7,7 +7,7 @@
   ],
   "description": "Container management made easy",
   "docker_api": true,
-  "image": "mikejmcguire/hass-portainer-{arch}",
+  "image": "mikejmcguire/hass-portainer-ee-{arch}",
   "ingress": true,
   "ingress_port": 9000,
   "init": false,
@@ -22,10 +22,10 @@
     "8000/tcp": "Port for exposing Portainer to edge agents",
     "9000/tcp": "Port for exposing Portainer UI directly"
   },
-  "name": "Portainer",
+  "name": "Portainer BE",
   "panel_icon": "mdi:docker",
-  "slug": "portainer",
+  "slug": "portaineree",
   "startup": "services",
-  "url": "https://github.com/MikeJMcGuire/hass-portainer",
+  "url": "https://github.com/MikeJMcGuire/hass-portainer-ee",
   "version": "2023.11.0"
 }
