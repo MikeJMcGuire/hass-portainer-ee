@@ -8,7 +8,7 @@
   "docker_api": true,
   "image": "mikejmcguire/hass-portainer-ee-{arch}",
   "ingress": true,
-  "ingress_port": 9000,
+  "ingress_port": 9443,
   "init": false,
   "map": [
     "ssl"
