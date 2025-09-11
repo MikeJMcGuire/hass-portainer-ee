@@ -1,4 +1,4 @@
-FROM portainer/portainer-ee:2.27.9-alpine
+FROM portainer/portainer-ee:2.33.1-alpine
 
 RUN apk add --no-cache tzdata nginx supervisor && rm -rf /var/cache/apk/*
 
@@ -7,4 +7,4 @@ COPY supervisord.conf /etc/supervisord.conf
 
 EXPOSE 80
 
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
+ENTRYPOINT ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
