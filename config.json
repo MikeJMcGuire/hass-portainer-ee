@@ -7,8 +7,6 @@
   "description": "Container management made easy",
   "docker_api": true,
   "image": "mikejmcguire/hass-portainer-ee-{arch}",
-  "ingress": true,
-  "ingress_port": 9000,
   "init": false,
   "map": [
     "ssl"
